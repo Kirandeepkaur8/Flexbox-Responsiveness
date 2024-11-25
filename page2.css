@@ -1,0 +1,88 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: hwb(213 7% 45%);
+    font-family: "Gabriola", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header {
+    background-color: lightblue;
+    text-align: center;
+    padding: 60px;
+    background-image: url('/images/heading.png');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-family: 'Papyrus', 'Brush Script MT', cursive;
+    font-size: 0px;
+    color: #333333;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #87CEEB; /* Blue background */
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+nav li {
+    background-color: #ffc0cb; /* Pink boxes */
+    padding: 5px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 2;
+    order: 1; /* Content section on the left */
+}
+
+aside {
+    flex: 1;
+    text-align: center;
+    order: 2; /* Image section on the right */
+}
+
+img {
+    max-width: 100%; /* Increase size */
+    width: 90%; /* Adjust to fit larger width */
+    height: auto;
+}
+
+footer {
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
